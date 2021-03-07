@@ -1,0 +1,253 @@
+@font-face
+{
+  font-family: "Dancing Script";
+  src: url(../Fonts/DancingScript-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+body /*just normal set up*/
+{
+    margin: 0; padding: 0;
+    background-color: #F13454; height: 1000px;
+}
+.container
+{
+    width: 80%;
+    margin: 0 auto; padding: 0;
+}
+#slider /*backgrouns setup*/
+{
+    background-color: rgb(41, 51, 78);
+    background-image: url(../images/group2.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+#slider .change /*buttons setup*/
+{
+    background-color: rgba(255, 255, 255, 0);
+    border: none; display: inline-block;
+    margin: 0; position: absolute;
+}
+.fa.fa-arrow-left, .fa.fa-arrow-right /*arrows*/
+{
+    font-size: 150%; color: #F0E0E0;
+}
+#slider h1
+{
+    margin-top: 0; padding-top: 3%;
+    font-family: 'Times New Roman', Times, serif; font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(241, 52, 84, .7);
+}
+#slider p
+{
+    text-transform: capitalize;
+    font-family: "Dancing Script";
+    margin-top: 5%;
+    color: rgb(240, 224, 224);
+}
+/*navigation*/
+nav
+{
+    background-color: rgb(41, 51, 78);
+    height: 12vh;
+}
+.logo
+{
+    height: 8vh; margin: 2vh;
+    float: left;
+}
+nav h2
+{
+    float: left; color: rgb(241, 52, 84);
+    text-transform: uppercase;
+    line-height: 12vh; font-weight: bold;
+    margin: 0; padding: 0;
+    font-family: "Dancing Script"; font-size: 200%;
+}
+nav #main/*styling ul*/
+{
+    float: right;
+    list-style: none;
+    padding: 0;
+}
+nav #main li
+{
+    display: inline-block;
+    height: 12vh;
+}
+nav #main a
+{
+    text-decoration: none; 
+    line-height: 12vh;
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 120%; color: rgb(240, 224, 224);
+    padding-left: 1vw;
+}
+nav #main a:hover
+{
+    color: #F13454; text-decoration: none;
+}
+/*styling collapsed menu*/
+nav button
+{
+    background-color: #F13454; border: none; border-radius: 10%; 
+    float: right; 
+    width: 35px; height: 30px;
+    margin: 3vh 3vh 3vh 0;
+}
+.active, .collapsible:hover
+{
+    background-color: #F0E0E0;
+}
+nav button::after /*to add "+"*/
+{
+    content: '\02795';
+    text-align: center;
+}
+.active::after/*to add "-"*/
+{
+    content: "\2796";
+}
+.content
+{
+    background-color: rgb(29, 40, 70);
+    text-align: center; display: none;
+    clear: both;
+    width: 15vw;
+    position: absolute; 
+    right: 0; 
+}
+.content a
+{
+    display: block;
+    text-decoration: none; padding: 2vh 0;
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    color: rgb(240, 224, 224);
+}
+.content a:active
+{
+    color: #F13454; text-decoration: none;
+}
+#dropdown
+{
+    float: right;
+    color: #F13454; font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#dropdown label
+{
+    line-height: 12vh; margin: 0 auto; font-size: 120%;
+}
+#dropdown div
+{
+    display: block;
+    text-align: center;
+    
+    background-color: rgb(29, 40, 70);
+}
+main div
+{
+    background-color: black;
+}
+/*for xs screens*/
+@media screen and (min-width: 320px)
+{
+    #slider
+    {
+        height: 50vh; 
+    }
+    .change.left
+    {
+        top: 21vh; left: 3vw;
+    }
+    .change.right
+    {
+        top: 21vh; right: 3vw;
+    }
+    #slider h1
+    {
+        font-size: 180%;
+    }
+    #slider p
+    {
+        font-size: 110%;
+    }
+    .content 
+    {
+        width: 100%;
+        top: 62vh;
+    } 
+}
+/*for sm screens*/
+@media screen and (min-width: 768px)
+{
+    #slider
+    {
+        height: 75vh; 
+    }
+    .change.left
+    {
+        top: 31vh; left: 3vw;
+    }
+    .change.right
+    {
+        top: 31vh; right: 3vw;
+    }
+    #slider h1
+    {
+        font-size: 240%;
+    }
+    #slider p
+    {
+        font-size: 150%;
+    }
+    nav ul a
+    {
+        font-size: 75%;
+    } 
+    .content 
+    {
+        width: 28%;
+        top: 87vh;
+    }
+}
+/*for md screens*/
+@media screen and (min-width: 992px)
+{
+    #slider
+    {
+        height: 100vh; 
+    }
+    .change.left
+    {
+        top: 42vh; left: 3vw;
+    }
+    .change.right
+    {
+        top: 42vh; right: 3vw;
+    }
+    #slider h1
+    {
+        font-size: 350%;
+    }
+    #slider p
+    {
+        font-size: 250%;
+    } 
+    nav ul a
+    {
+        font-size: 70%;
+    }
+}
+/*for lg screens*/
+@media screen and (min-width: 1200px)
+{
+    nav ul a
+    {
+        font-size: 120%;
+    }
+}

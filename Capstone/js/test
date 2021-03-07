@@ -1,0 +1,44 @@
+var x = 1;
+function next()
+{
+    if (x < 3 && x > 0)
+    {
+        var slide = x + 1;
+        if (slide == 1)
+        {
+            var address = "../images/group2.jpg"
+        }
+        else if (slide == 2)
+        {
+            var address = "../images/group3.jpg"
+        }
+        else if(slide == 3)
+        {
+            var address = "../images/group4.jpg"
+        }
+        document.getElementById('slider').style.backgroundImage = 'url('+address+')';
+        x++;
+    }
+}
+function previous()
+{
+    if (x > 1 && x < 4)
+    {
+        var slide = x - 1;
+        if (slide == 1)
+        {
+            var address = "../images/group2.jpg"
+        }
+        else if (slide == 2)
+        {
+            var address = "../images/group3.jpg"
+        }
+        else if(slide == 3)
+        {
+            var address = "../images/group4.jpg"
+        }
+        document.getElementById('slider').style.backgroundImage = 'url('+address+')';
+        x--;
+    }
+}
+

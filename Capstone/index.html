@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio">
+        <meta name="author" content="Nourha A. AboElenen">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>N Portfolio</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./css/normalize.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/styling.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--start with the header (slider + navbar)-->
+        <header>
+            <!--slider part-->
+            <section id="slider">
+                <h1>front-end developer &amp; designer</h1>
+                <p>welcome to my website!</p>
+                <a href="#" class="change left" onclick="previous()"><i class="fa fa-arrow-left"></i></a>
+                <a href="#" class="change right"onclick="next()"><i class="fa fa-arrow-right"></i></a>
+            </section>
+            <!--nav part-->
+            <nav>
+                <div class="container">
+                    <img src="./images/logo1.png" class="logo">
+                    <h2>logo</h2>
+                    <ul class="hidden-xs hidden-sm" id="main">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                    <button class="collapsible visible-xs visible-sm"></button>
+                    <div class="content hidden-md hidden-lg" role="navigation">
+                        <a href="#">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Resume</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--content of website-->
+        <main>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid perferendis accusantium possimus numquam iure, blanditiis quisquam temporibus perspiciatis asperiores sint magni pariatur earum tempore deserunt fuga? Cumque, doloremque labore. s accusantium possimus numquam iure, blanditiis quisquam temporibus perspiciatis asperiores sint magni pariatur earum tempore deserunt fuga? Cumque, doloremque la</div>
+        </main>
+        <!--the end-->
+        <footer>
+
+        </footer>
+        <!--JavaS files-->
+        <script src="./js/interactivity.js"></script>    
+    </body>
+</html>
