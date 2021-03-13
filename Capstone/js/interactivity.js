@@ -14,7 +14,7 @@ function next()
         }
         else if(slide == 3)
         {
-            document.getElementById("slider").style.backgroundImage = "url('../images/group4.jpg')";
+            document.getElementById("slider").style.backgroundImage = "url('../images/girl1.jpg')";
         }
         x++;
     }
@@ -34,7 +34,7 @@ function previous()
         }
         else if(slide == 3)
         {
-            document.getElementById("slider").style.backgroundImage = "url('../images/group4.jpg')";
+            document.getElementById("slider").style.backgroundImage = "url('../images/girl1.jpg')";
         }
         x--;
     }

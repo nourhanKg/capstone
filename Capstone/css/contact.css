@@ -1,0 +1,141 @@
+main span
+{
+    color: #F13454; font-weight: bold; font-family: 'Times New Roman', Times, serif;
+}
+.contact
+{
+    color: #F0E0E0; 
+}
+.contact h2
+{
+    color: #F13454; font-family: "Dancing Script";
+}
+.form input
+{
+    background-color: #F0E0E0; color: rgb(29, 40, 70);
+    border: none; margin: 2% 0; padding-left: 4%;
+}
+.form label
+{
+    color: #F13454; font-weight: bold; font-family: 'Times New Roman', Times, serif;
+}
+#submit
+{
+    width: 10rem; color: #F13454; font-weight: bold; font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(29, 40, 70); padding: 0; text-align: center;
+}
+textarea
+{
+    resize: none; background-color: #F0E0E0; color: rgb(29, 40, 70);
+    padding-left: 3%; margin: 2% 0; padding-right: 3%;
+}
+footer
+{
+    background-color: rgb(29, 40, 70); height: 10rem; 
+}
+footer a
+{
+    line-height: 10rem; 
+}
+@media screen and (min-width: 280px)
+{
+    .contact
+    {
+        margin: 3% auto; 
+    }
+    .info
+    {
+        padding-left: 3%;
+    }
+    /*styling map*/
+    .map-responsive
+    {
+        overflow:hidden;
+        padding-bottom: 40%;
+        position:relative;
+        height:0;
+        margin: 7% 0; 
+    }
+    .map-responsive iframe
+    {
+        left:18%;
+        top:0;
+        height:100%;
+        width:60%;
+        position:absolute; 
+    }
+    form
+    {
+        margin-left: 25%; margin-right: 25%;
+    }
+    .form input
+    {
+        height: 3rem; width: 100%;
+    }
+    .form textarea
+    {
+        height: 15rem; width: 100%;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    /*styling contact*/
+    .contact
+    {
+        height: 80%; margin: 3% 5%;
+    }
+    .clear
+    {
+        display: block;
+    }
+    .info
+    {
+        width: 50%; float: left;
+    }
+    .form
+    {
+        width: 50%; float: left;
+    }
+    form
+    {
+        margin: 0;
+    }
+    .form input
+    {
+        height: 3rem; width: 30rem;
+    }
+    .form textarea
+    {
+        width: 30rem; height: 20rem;
+    }
+    main
+    {
+        height: 55rem;
+    }
+    .contact h2, .contact p
+    {
+        padding-left: 4%;
+    }
+    /*styling map*/
+    .map-responsive
+    {
+        overflow:hidden;
+        padding-bottom: 40%;
+        position:relative;
+        height:0;
+        margin: 7% 3%; 
+    }
+    .map-responsive iframe
+    {
+        left:1%;
+        top:0;
+        height:100%;
+        width:60%;
+        position:absolute; 
+    }
+    /*styling form*/
+    .form
+    {
+        padding-top: 4%; padding-left: 4%;
+    }
+}

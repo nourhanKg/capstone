@@ -7,12 +7,17 @@
 body /*just normal set up*/
 {
     margin: 0; padding: 0;
-    background-color: #F13454; height: 1000px;
+    background-color: rgb(41, 51, 78);
+     
 }
 .container
 {
     width: 80%;
-    margin: 0 auto; padding: 0;
+    margin: 0 auto; padding: 0; 
+}
+.clear
+{
+    clear: both;
 }
 #slider /*backgrouns setup*/
 {
@@ -32,7 +37,7 @@ body /*just normal set up*/
 }
 .fa.fa-arrow-left, .fa.fa-arrow-right /*arrows*/
 {
-    font-size: 150%; color: #F0E0E0;
+    font-size: 150%; color: #F13454;
 }
 #slider h1
 {
@@ -41,17 +46,21 @@ body /*just normal set up*/
     text-transform: uppercase;
     color: rgba(241, 52, 84, .7);
 }
-#slider p
+#slider h2
 {
     text-transform: capitalize;
     font-family: "Dancing Script";
     margin-top: 5%;
-    color: rgb(240, 224, 224);
+    color: rgba(241, 52, 84, .7);
 }
 /*navigation*/
 nav
 {
     background-color: rgb(41, 51, 78);
+    height: 12vh;
+}
+nav .container
+{
     height: 12vh;
 }
 .logo
@@ -71,14 +80,14 @@ nav #main/*styling ul*/
 {
     float: right;
     list-style: none;
-    padding: 0;
+    padding: 0; margin-bottom: 0;
 }
 nav #main li
 {
     display: inline-block;
     height: 12vh;
 }
-nav #main a
+nav a
 {
     text-decoration: none; 
     line-height: 12vh;
@@ -95,8 +104,8 @@ nav button
 {
     background-color: #F13454; border: none; border-radius: 10%; 
     float: right; 
-    width: 35px; height: 30px;
-    margin: 3vh 3vh 3vh 0;
+    width: 35px; height: 8vh;
+    margin: 2vh 3vh 2vh 0;
 }
 .active, .collapsible:hover
 {
@@ -113,48 +122,84 @@ nav button::after /*to add "+"*/
 }
 .content
 {
-    background-color: rgb(29, 40, 70);
+    background-color: rgba(29, 40, 70, .9);
     text-align: center; display: none;
     clear: both;
-    width: 15vw;
+    width: 100%; 
     position: absolute; 
     right: 0; 
 }
 .content a
 {
-    display: block;
+    display: block; 
     text-decoration: none; padding: 2vh 0;
-    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
-    color: rgb(240, 224, 224);
+    font-family: Arial, Helvetica, sans-serif, serif; font-weight: bold;
+    color: rgb(240, 224, 224); text-transform: uppercase;
 }
-.content a:active
+.content a:active, .content a:hover
 {
     color: #F13454; text-decoration: none;
 }
-#dropdown
+#marked1, #marked2
 {
-    float: right;
-    color: #F13454; font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #F13454;
 }
-#dropdown label
+nav a:focus
 {
-    line-height: 12vh; margin: 0 auto; font-size: 120%;
+    color: rgb(240, 224, 224); text-decoration: none;
 }
-#dropdown div
+/*styling about*/
+.about
 {
-    display: block;
+    overflow: hidden; background-color: #F0E0E0;
+}
+.img img
+{
+    height: 100%; width: 100%;
+}
+.intro h3
+{
+    font-family: "Dancing Script"; 
+}
+.intro p, .intro h3, .intro a
+{
+    color: rgb(29, 40, 70);
+    padding: 0 4%; 
+}
+.intro span
+{
+    font-style: italic; font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; color: #F13454;
+}
+.intro a
+{
+    margin-left: 4%; display: inline-block;
+    border: #F13454 1px solid; font-weight: bold; text-transform: uppercase;
+    background-color: #F0E0E0; padding: 2%; margin-top: 4%; margin-bottom: 4%;
+}
+/*styling footer*/
+footer
+{
+    background-color: rgb(41, 51, 78);
+    height: 20vh;
     text-align: center;
-    
-    background-color: rgb(29, 40, 70);
 }
-main div
+footer p
 {
-    background-color: black;
+    color: #F0E0E0; font-weight: bold;
+    margin-top: 3vh;
+}
+footer i
+{
+    color: #F0E0E0; padding: 0 1vw;
+    margin-top: 6vh;
+}
+footer i:hover, footer i:active
+{
+    color: #F13454;
 }
 /*for xs screens*/
-@media screen and (min-width: 320px)
+@media screen and (min-width: 280px)
 {
     #slider
     {
@@ -178,9 +223,16 @@ main div
     }
     .content 
     {
-        width: 100%;
         top: 62vh;
-    } 
+    }
+    .about .img 
+    {
+        width: 100%;
+    }
+    .about .intro
+    {
+        width: 100%; 
+    }
 }
 /*for sm screens*/
 @media screen and (min-width: 768px)
@@ -211,8 +263,15 @@ main div
     } 
     .content 
     {
-        width: 28%;
         top: 87vh;
+    }
+    .about .img
+    {
+        width: 40%; float: left; height: 40rem;
+    }
+    .about .intro
+    {
+        width: 55%; float: left;
     }
 }
 /*for md screens*/
@@ -240,8 +299,13 @@ main div
     } 
     nav ul a
     {
-        font-size: 70%;
+        font-size: 120%;
     }
+    .intro
+    {
+        font-size: 120%;
+    }
+    
 }
 /*for lg screens*/
 @media screen and (min-width: 1200px)

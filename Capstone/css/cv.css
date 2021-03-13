@@ -1,0 +1,21 @@
+body
+{
+    border-style: double; border-color: rgb(29, 40, 70); border-width: 12px; font-size: 20px;
+}
+h1, p
+{
+    color: rgb(29, 40, 70); text-align: center;
+}
+span
+{
+    font-weight: bold;
+}
+.title
+{
+    background-color: rgb(29, 40, 70); color: white; 
+    padding: 5px; font-size: 24px; font font-weight: bold;
+}
+div
+{
+    padding: 10px; color: rgb(29, 40, 70);
+}

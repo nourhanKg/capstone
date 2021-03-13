@@ -1,0 +1,119 @@
+@font-face
+{
+  font-family: "Dancing Script";
+  src: url(../Fonts/DancingScript-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+body
+{
+    background-color: rgb(240, 224, 224);
+}
+main
+{
+    text-align: center;
+    height: 100%;
+}
+.clear
+{
+    clear: both;
+}
+.description
+{
+    text-align: center; color: rgb(41, 51, 78);
+    margin: 2%;
+}
+.description h2
+{
+    font-family: "Dancing Script";
+}
+.description p
+{
+    padding-top: 1%; font-style: italic;
+}
+.works
+{
+    width: 80%; margin: 0 auto; 
+}
+.works img
+{
+    box-sizing: border-box;
+}
+.works a:hover img
+{
+    box-shadow: 5px 5px rgba(241, 52, 84, .7);
+}
+header
+{
+    background-color: rgb(241, 52, 84); text-align: center;
+}
+header i
+{
+    color: #F0E0E0; padding: 2% 2%;
+}
+header i:hover, footer i:active
+{
+    color: rgb(41, 51, 78);
+}
+footer
+{
+    background-color: #F0E0E0; 
+}
+.connect
+{
+    border: #F13454 1px solid; font-weight: bold; text-transform: uppercase;
+    background-color: #F0E0E0; padding: 1% 2%; color: rgb(41, 51, 78);
+}
+.connect:hover
+{
+    cursor: pointer; color: rgb(41, 51, 78);
+}
+@media screen and (min-width: 280px)
+{
+    
+    .works img
+    {
+        width: 96%; margin: 2%;
+    }
+}
+@media screen and (min-width: 480px)
+{
+    .description p
+    {
+        font-size: 110%;
+    }
+    .works img
+    {
+        width: 46%; float: left;
+        height: 15rem; 
+    }
+}
+@media screen and (min-width: 768px)
+{
+    .works img
+    {
+        height: 20rem;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .description p
+    {
+        font-size: 130%;
+    }
+    .works img
+    {
+        width: 29.33333%; 
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    .description p
+    {
+        font-size: 140%;
+    }
+    .works img
+    {
+        width: 21%; 
+    }
+}
+
