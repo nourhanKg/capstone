@@ -38,10 +38,6 @@ main
 {
     box-sizing: border-box;
 }
-.works a:hover img
-{
-    box-shadow: 5px 5px rgba(241, 52, 84, .7);
-}
 header
 {
     background-color: rgb(241, 52, 84); text-align: center;
@@ -74,6 +70,11 @@ footer
     {
         width: 96%; margin: 2%;
     }
+    .works img
+    {
+        box-shadow: 5px 5px rgba(241, 52, 84, .7);
+    }
+
 }
 @media screen and (min-width: 480px)
 {
@@ -103,6 +104,15 @@ footer
     .works img
     {
         width: 29.33333%; 
+    }
+    .works img
+    {
+        box-shadow: none;
+    }
+
+    .works a:hover img
+    {
+        box-shadow: 5px 5px rgba(241, 52, 84, .7);
     }
 }
 @media screen and (min-width: 1200px)
