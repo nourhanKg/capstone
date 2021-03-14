@@ -1,0 +1,249 @@
+@font-face
+{
+  font-family: "Dancing Script";
+  src: url(../Fonts/DancingScript-VariableFont_wght.ttf);
+  font-weight: bold;
+}
+body /*just normal set up*/
+{
+    margin: 0; padding: 0;
+    background-color: rgb(41, 51, 78);
+     
+}
+.container
+{
+    width: 80%;
+    margin: 0 auto; padding: 0; 
+}
+/*styling slider*/
+.slider
+{
+    text-align: center;
+}
+.slider h3, .slider h2
+{
+    font-family: 'Times New Roman', Times, serif; font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(241, 52, 84, .7);
+}
+.slider h3
+{
+    text-transform: capitalize; font-family: "Dancing Script";
+}
+.clear
+{
+    clear: both;
+}
+/*styling nav*/
+nav
+{
+    background-color: rgb(41, 51, 78);
+    height: 12%;
+}
+nav .container
+{
+    height: 12%; position: relative;
+}
+.logo
+{
+    height: 8%; margin: 2%;
+    float: left;
+}
+nav h2
+{
+    float: left; color: rgb(241, 52, 84);
+    text-transform: uppercase;
+    line-height: 12vh; font-weight: bold;
+    margin: 0; padding: 0;
+    font-family: "Dancing Script"; font-size: 200%;
+}
+nav #main/*styling ul*/
+{
+    float: right;
+    list-style: none;
+    padding: 0; margin-bottom: 0;
+}
+nav #main li
+{
+    display: inline-block;
+    height: 12vh;
+}
+nav a
+{
+    text-decoration: none; 
+    line-height: 12vh;
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 120%; color: rgb(240, 224, 224);
+    padding-left: 1vw;
+}
+nav #main a:hover
+{
+    color: #F13454; text-decoration: none;
+}
+/*styling collapsed menu*/
+nav button
+{
+    background-color: #F13454; border: none; border-radius: 10%; 
+    float: right; 
+    width: 35px; height: 8vh;
+    margin: 2vh 3vh 2vh 0;
+}
+.active1, .collapsible:hover
+{
+    background-color: #F0E0E0;
+}
+nav button::after /*to add "+"*/
+{
+    content: '\02795';
+    text-align: center;
+    color: rgb(41, 51, 78);
+}
+.active1::after/*to add "-"*/
+{
+    content: "\2796";
+    text-align: center;
+    color: #F13454;
+}
+.content
+{
+    background-color: rgba(29, 40, 70, .9);
+    text-align: center; display: none;
+    clear: both;
+    position: absolute; 
+}
+.content a
+{
+    display: block; height: 30%;
+    text-decoration: none; padding: 2% 0;
+    font-family: Arial, Helvetica, sans-serif, serif; font-weight: bold;
+    color: rgb(240, 224, 224); text-transform: uppercase;
+}
+.content a:hover
+{
+    color: #F13454; text-decoration: none;
+}
+#marked1, #marked2
+{
+    color: #F13454;
+}
+nav a:focus
+{
+    color: rgb(240, 224, 224); text-decoration: none;
+}
+/*styling about*/
+.about
+{
+    overflow: hidden; background-color: #F0E0E0;
+}
+.img img
+{
+    height: 100%; width: 100%;
+}
+.intro h3
+{
+    font-family: "Dancing Script"; 
+}
+.intro p, .intro h3, .intro a
+{
+    color: rgb(29, 40, 70);
+    padding: 0 4%; 
+}
+.intro span
+{
+    font-style: italic; font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; color: #F13454;
+}
+.intro a
+{
+    margin-left: 4%; display: inline-block;
+    border: #F13454 1px solid; font-weight: bold; text-transform: uppercase;
+    background-color: #F0E0E0; padding: 2%; margin-top: 4%; margin-bottom: 4%;
+}
+/*styling footer*/
+footer
+{
+    background-color: rgb(41, 51, 78);
+    height: 20vh;
+    text-align: center;
+}
+footer p
+{
+    color: #F0E0E0; font-weight: bold;
+    margin-top: 3vh;
+}
+footer i
+{
+    color: #F0E0E0; padding: 0 1vw;
+    margin-top: 6vh;
+}
+footer i:hover, footer i:active
+{
+    color: #F13454;
+}
+/*for xs screens*/
+@media screen and (min-width: 280px)
+{
+    .content 
+    {
+        width: 130%;
+        top: 98%; right: -15%;
+    }
+    .about .img 
+    {
+        width: 100%;
+    }
+    .about .intro
+    {
+        width: 100%; 
+    }
+    .slider h3, .slider h2
+    {
+        font-size: 150%;
+    }
+}
+/*for sm screens*/
+@media screen and (min-width: 768px)
+{
+    nav ul a
+    {
+        font-size: 75%;
+    } 
+    .about .img
+    {
+        width: 40%; float: left; height: 40rem;
+    }
+    .about .intro
+    {
+        width: 55%; float: left;
+    }
+    .slider h3, .slider h2
+    {
+        font-size: 250%;
+    }
+}
+/*for md screens*/
+@media screen and (min-width: 992px)
+{
+    
+    nav ul a
+    {
+        font-size: 120%;
+    }
+    .intro
+    {
+        font-size: 120%;
+    }
+    .slider h3, .slider h2
+    {
+        font-size: 300%;
+    }
+    
+}
+/*for lg screens*/
+@media screen and (min-width: 1200px)
+{
+    nav ul a
+    {
+        font-size: 120%;
+    }
+}
